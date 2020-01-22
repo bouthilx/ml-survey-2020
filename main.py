@@ -152,7 +152,8 @@ def barplot_with_folds_emp_vs_theory(output, labels, data, img_type):
     
     plot_data = generate_counts(data, labels, 'emp_or_theory', order)
 
-    barplot_with_folds(labels, names, plot_data, COLORS, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, COLORS,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_emp_or_theory.{img_type}'))
 
 
@@ -168,7 +169,8 @@ def barplot_with_folds_hpo(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_hpo.{img_type}'))
 
 
@@ -186,7 +188,8 @@ def barplot_with_folds_hpo_methods(output, labels, data, img_type):
 
         plot_data[conf_name] = counts
 
-    barplot_with_folds(labels, names, plot_data, COLORS, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, COLORS,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_hpo_methods.{img_type}'))
 
 
@@ -204,7 +207,8 @@ def barplot_with_folds_n_hps(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)[:4]
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_n_hps.{img_type}'))
 
 
@@ -224,7 +228,8 @@ def barplot_with_folds_n_hps_hpo_method(output, labels, data, img_type, hpo_meth
     filename = 'barplot_with_folds_n_hps_{hpo_method}.{img_type}'.format(
         hpo_method=hpo_method.replace(' ', '_'), img_type=img_type)
 
-    barplot_with_folds(labels, names, plot_data, COLORS, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, COLORS,
+                       height=1.6, width=4,
                        filename=os.path.join(output, filename))
 
 
@@ -243,7 +248,8 @@ def barplot_with_folds_n_trials(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_n_trials.{img_type}'))
 
 def barplot_with_folds_n_trials_hpo_method(output, labels, data, img_type, hpo_method='Grid Search'):
@@ -263,7 +269,8 @@ def barplot_with_folds_n_trials_hpo_method(output, labels, data, img_type, hpo_m
     filename = 'barplot_with_folds_n_trials_{hpo_method}.{img_type}'.format(
         hpo_method=hpo_method.replace(' ', '_'), img_type=img_type)
 
-    barplot_with_folds(labels, names, plot_data, COLORS, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, COLORS,
+                       height=1.6, width=4,
                        filename=os.path.join(output, filename))
 
 
@@ -288,7 +295,8 @@ def barplot_with_folds_baseline(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)[:2]
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=1.6, width=4,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_baseline.{img_type}'))
 
 
@@ -316,7 +324,8 @@ def barplot_with_folds_n_baselines(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_n_baselines.{img_type}'))
 
 
@@ -344,7 +353,8 @@ def barplot_with_folds_n_datasets(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_n_datasets.{img_type}'))
 
 
@@ -373,7 +383,8 @@ def barplot_with_folds_n_seeds(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_n_seeds.{img_type}'))
 
 
@@ -418,7 +429,8 @@ def barplot_with_folds_seeding(output, labels, data, img_type):
     colors = copy.deepcopy(COLORS)
     colors.insert(0, NOT_APPLICABLE_COLOR)
 
-    barplot_with_folds(labels, names, plot_data, colors, height=11 / 7, width=(8.5 - 2) / 3,
+    barplot_with_folds(labels, names, plot_data, colors,
+                       height=1.6, width=4,
                        filename=os.path.join(output, f'barplot_with_folds_seeding.{img_type}'))
 
 

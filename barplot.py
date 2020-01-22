@@ -171,9 +171,9 @@ def barplot_with_folds(labels, names, data, colors, height=1.8, width=4, filenam
     ax.set_yticks(np.arange(0, 125, 25))
     ax.spines['left'].set_bounds(0, 100)
     ax.set_xlim(-0.3, positions[-1] + 0.3 + 0.8)
-    ax.set_ylim(0, 120)
+    # ax.set_ylim(0, 120)
 
-    plt.subplots_adjust(top=1)
+    # plt.subplots_adjust(top=1)
 
     ax.set_xticks(positions)
     ax.set_xticklabels(labels)
