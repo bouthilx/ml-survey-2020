@@ -29,13 +29,17 @@ used a different random seed for each experiment.
 
 **Sample results**
 
+.. raw:: html
+
+    <div>
+    <div style='width=100px;float=left;display: inline-block;'>
+    How many papers with experiments optimized hyperparameters.
+    </div>
+    <div style='width=100px;float=left;display: inline-block;'>
+    <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_hpo.png" width="400px">
+    </div></div>
+
 .. class:: side-caption
-
-  .. figure:: images/barplot_with_folds_hpo.png
-   :align: left
-   :width: 400px
-
-   How many papers with experiments optimized hyperparameters.
 
   .. figure:: images/barplot_with_folds_hpo_methods.png
    :align: left
