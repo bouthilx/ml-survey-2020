@@ -33,19 +33,21 @@ used a different random seed for each experiment.
 
     <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_hpo.png" width="400px">
 
-    How many papers with experiments optimized hyperparameters.
+    <p>How many papers with experiments optimized hyperparameters.</p>
 
     <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_hpo_methods.png" width="400px">
 
-    What hyperparameter optimization method were used.
+    <p>What hyperparameter optimization method were used.</p>
 
     <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_n_datasets.png" width="400px">
 
-   Number of different datasets used for benchmarking.
+    <p>Number of different datasets used for benchmarking.</p>
 
     <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_n_seeds.png" width="400px">
 
-   Number of results reported for each model (ex: for different seeds)
+    <p>Number of results reported for each model (ex: for different seeds)</p>
+
+    </br>
 
 These are just samples. Read `the full report <https://hal.archives-ouvertes.fr/hal-02447823>`_ for
 more results.
