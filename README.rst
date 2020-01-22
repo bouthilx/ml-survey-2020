@@ -31,31 +31,19 @@ used a different random seed for each experiment.
 
 .. raw:: html
 
-    <div>
-    <div style='width=100px;float=left;display: inline-block;'>
-    How many papers with experiments optimized hyperparameters.
-    </div>
-    <div style='width=100px;float=left;display: inline-block;'>
     <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_hpo.png" width="400px">
-    </div></div>
 
-.. class:: side-caption
+    How many papers with experiments optimized hyperparameters.
 
-  .. figure:: images/barplot_with_folds_hpo_methods.png
-   :align: left
-   :width: 400px
+    <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_hpo_methods.png" width="400px">
 
-   What hyperparameter optimization method were used.
+    What hyperparameter optimization method were used.
 
-  .. figure:: images/barplot_with_folds_n_datasets.png
-   :align: left
-   :width: 400px
+    <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_n_datasets.png" width="400px">
 
    Number of different datasets used for benchmarking.
 
-  .. figure:: images/barplot_with_folds_n_seeds.png
-   :align: left
-   :width: 400px
+    <img src="https://github.com/bouthilx/ml-survey-2020/raw/master/images/barplot_with_folds_n_seeds.png" width="400px">
 
    Number of results reported for each model (ex: for different seeds)
 
